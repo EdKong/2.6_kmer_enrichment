@@ -6,10 +6,9 @@ Usage:      python kmer_enrich.py -i <input FASTA file> -k <kmer as a string>
 Example:    python kmer_enrich.py -i catsection.FASTA -k "CATTAG"
 
 Note:       Input: FASTA file, can be multiple sequences, as long as each sequence begins with '>' as is standard. 
---kmer: directly give a kmer as a string
+  --kmer: directly give a kmer as a string
 
 Output: Prints the following information (for each sequence):
-
   Name: name of the fasta sequence from its identifier
   -- "expected" number of hits given independent bernoulli trials 
   -- actual number of hits (kmer matches to the base sequence)
